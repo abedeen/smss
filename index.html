@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>BizLand Bootstrap Template - Index</title>
+  <title>SAMM Software Comppany</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -57,7 +57,7 @@
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html"><img src="https://samm.sa/wp-content/uploads/2021/03/بدون-خلفية.png"/><span>.</span></a></h1>
+      <h1 class="logo"><a href="index.html"><img src="https://samm.sa/wp-content/uploads/2021/03/بدون-خلفية.png"/><span></span></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
 
@@ -97,7 +97,7 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1>Welcome to <span>BizLand</span></h1>
+      <h1><span  data-langkey="k1" class="language"></span><img src="https://samm.sa/wp-content/uploads/2021/03/بدون-خلفية.png"/></h1>
       <h2>We are team of talented designers making websites with Bootstrap</h2>
       <div class="d-flex">
         <a href="#about" class="btn-get-started scrollto">Get Started</a>
@@ -1029,12 +1029,18 @@ var xhttp = new XMLHttpRequest();
 var langDocument = {};
 var userLang = navigator.language || navigator.userLanguage;
 function availableLanguages(lang){
-  if("ar-dz,ar-bh,ar-eg,ar-iq,ar-jo,ar-kw,ar-lb,ar-ly,ar-ma,ar-om,ar-qa,ar-sa,ar-sy,ar-tn,ar-ae,ar-ye,arabic,ar ".includes(lang)) return "arabic.json";
+  if("ar-dz,ar-bh,ar-eg,ar-iq,ar-jo,ar-kw,ar-lb,ar-ly,ar-ma,ar-om,ar-qa,ar-sa,ar-sy,ar-tn,ar-ae,ar-ye,arabic,ar ".includes(lang))
+  {
+document.getElementsByTagName("html")[0].setAttribute("dir", "rtl");
+document.getElementsByTagName("html")[0].setAttribute("lang", "ar");
+    return "arabic.json";
+}
   else return "english.json";
 }
 //languages.forEach(function(value, index){
 //    languages[index].addEventListener('click', function(){
-        switchLanguage(availableLanguages(userLang));
+    //    switchLanguage(availableLanguages(userLang));
+        switchLanguage(availableLanguages("ar"));
 //    });
 //});
 xhttp.onreadystatechange = function(){
@@ -1044,7 +1050,7 @@ xhttp.onreadystatechange = function(){
     }
 };
 function switchLanguage(language){
-    xhttp.open("GET", "assets/i18n/" + language, true);
+    xhttp.open("GET", "assets/i18n/" + language+"?id="+(new Date()), true);
     xhttp.setRequestHeader("Content-type", "application/json");
     xhttp.send();
 }
