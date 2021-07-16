@@ -31,7 +31,10 @@
 .row1{
   margin-top:22px;
 }
-
+/* CSS used here will be applied after bootstrap.css */.nav { margin-bottom: 0; }
+.nav > li.dropdown.open { position: static; }
+.nav > li.dropdown.open .dropdown-menu {display:table; width: 100%; text-align: center; left:0; right:0; }
+.dropdown-menu>li { display: table-cell; }
 </style>
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -83,7 +86,7 @@
             </ul>
           </li>
           <li class="dropdown"><a class="nav-link scrollto" href="#services"><span  data-langkey="vps"></span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
+            <ul class="dropdown-menu" role="menu">
               <li><a data-langkey="vbslinux" href="#"></a></li>
               <li><a data-langkey="windowsps" href="#"></a></li>
               <li><a data-langkey="mateen2" href="#"></a></li>
@@ -91,7 +94,7 @@
             </ul>
           </li>
           <li class="dropdown"><a class="nav-link scrollto" href="#portfolio"><span  data-langkey="servers"></span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
+            <ul class="dropdown-menu" role="menu">
               <li><a data-langkey="fullintroductoryservers" href="#"></a></li>
               <li><a data-langkey="fulleconomicservers" href="#"></a></li>
               <li><a data-langkey="fullenterpriseservers" href="#"></a></li>
@@ -103,7 +106,7 @@
           </li>
           <li><a class="nav-link scrollto" data-langkey="ranges" href="#portfolio"></a></li>
           <li class="dropdown"><a class="nav-link scrollto" href="#portfolio"><span  data-langkey="services"></span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
+            <ul class="dropdown-menu" role="menu">
               <li><a data-langkey="websitedesign" href="#"></a></li>
               <li><a data-langkey="progammingwebsites" href="#"></a></li>
               <li><a data-langkey="smartapis" href="#"></a></li>
@@ -160,7 +163,7 @@
         <div data-aos="flip-left"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="2000">
-
+   
         <div class="row row1">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box icon-box1" data-aos="fade-up" data-aos-delay="100">
@@ -287,7 +290,13 @@
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box icon-box1" data-aos="fade-up" data-aos-delay="200">
-              <div class="icon"><i class="bx bx-file"></i></div>
+              <script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script>
+              <lord-icon
+              src="https://cdn.lordicon.com/ssdupzsv.json"
+              trigger="loop"
+              colors="primary:#121331,secondary:#08a88a"
+              style="width:100px;height:100px">
+          </lord-icon>
               <h4 class="title"><a href=""data-langkey="k22"></a></h4>
               <p class="description"data-langkey="k23"></p>
             </div>
@@ -295,7 +304,13 @@
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box icon-box1" data-aos="fade-up" data-aos-delay="300">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script>
+              <lord-icon
+              src="https://cdn.lordicon.com/qrbokoyz.json"
+              trigger="loop"
+              colors="primary:#121331,secondary:#08a88a"
+              style="width:100px;height:100px">
+          </lord-icon>
               <h4 class="title"><a href=""data-langkey="k24"></a></h4>
               <p class="description"data-langkey="k25"></p>
             </div>
@@ -303,7 +318,13 @@
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box icon-box1" data-aos="fade-up" data-aos-delay="400">
-              <div class="icon"><i class="bx bx-world"></i></div>
+              <script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script>
+              <lord-icon
+              src="https://cdn.lordicon.com/cjieiyzp.json"
+              trigger="loop"
+              colors="primary:#121331,secondary:#08a88a"
+              style="width:100px;height:100px">
+          </lord-icon>
               <h4 class="title"><a href=""data-langkey="k26"></a></h4>
               <p class="description"data-langkey="k27"></p>
             </div>
@@ -312,7 +333,13 @@
         </div><div class="row row1">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box  icon-box1" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script>
+              <lord-icon
+                  src="https://cdn.lordicon.com/igrslveu.json"
+                  trigger="loop"
+                  colors="primary:#121331,secondary:#08a88a"
+                  style="width:100px;height:100px">
+              </lord-icon>
               <h4 class="title"><a href=""data-langkey="k28"></a></h4>
               <p class="description"data-langkey="k29"></p>
             </div>
@@ -384,8 +411,8 @@
 
         <div class="section-title">
           <h2>About</h2>
-          <h3><Find Out More> <span>About Us</span></h3>
-          <p><h4 class="title"><a href=""data-langkey="k45"></a></h4></p>
+          <h3>Find Out More <span>About Us</span></h3>
+          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
         </div>
 
         <div class="row">
@@ -393,45 +420,32 @@
             <img src="assets/img/about.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <h3><a href=""data-langkey="k54"></a></h3>
+            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
             <p class="fst-italic">
-              <h4 class="title"><a href=""data-langkey="k55"></a></h4>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
             </p>
             <ul>
               <li>
-                <li>
-                  <i class='bx bx-upvote'></i>
-                <div>
-                  <h5 class="title"><a href=""data-langkey="k46"></a></h5>
-                  <p class="description" data-langkey="k47"></p>
-                </div>
-              </li>
-              <li>
-                <i class='bx bx-task' ></i>
-                <div>
-                  <h5 class="title"><a href=""data-langkey="k48"></a></h5>
-                  <p class="description" data-langkey="k49"></p>
-                </div>
-              <li>
                 <i class="bx bx-store-alt"></i>
                 <div>
-                  <h5 class="title"><a href=""data-langkey="k50"></a></h5>
-                  <p class="description" data-langkey="k51"></p>
+                  <h5>Ullamco laboris nisi ut aliquip consequat</h5>
+                  <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
                 </div>
-              <li>
+              </li>
               <li>
                 <i class="bx bx-images"></i>
                 <div>
-                  <h5 class="title"><a href=""data-langkey="k52"></a></h5>
-                  <p class="description" data-langkey="k53"></p>
+                  <h5>Magnam soluta odio exercitationem reprehenderi</h5>
+                  <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
                 </div>
               </li>
             </ul>
-          <!--  <p>
+            <p>
               Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
               velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
               culpa qui officia deserunt mollit anim id est laborum
-            </p>-->
+            </p>
           </div>
         </div>
 
@@ -584,122 +598,74 @@
         <div class="section-title">
           <h2>Services</h2>
           <h3>Check Our <span>Services</span></h3>
-          <p class="description" data-langkey="k56"></p>
+          <p data-langkey="k44"></p>
         </div>
 
         <div class="row">
-
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><class="title"><a href=""data-langkey="k57"></a></h4>
-              <p class="description" data-langkey="k58"></p>
-              <p class="description" data-langkey="k59"></p>
+              <h4><a href="">Lorem Ipsum</a></h4>
+              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
             </div>
-
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-file"></i></div>
-              <h4><class="title"><a href=""data-langkey="k60"></a></h4>
-              <p class="description" data-langkey="k61"></p>
-              <p class="description" data-langkey="k62"> </p>
+              <h4><a href="">Sed ut perspiciatis</a></h4>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="">Magni Dolores</a></h4>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-world"></i></div>
-              <h4><class="title"><a href=""data-langkey="k66"></a></h4>
-              <p class="description" data-langkey="k67"></p>
-              <p class="description" data-langkey="k68"></p>
+              <h4><a href="">Nemo Enim</a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
             </div>
           </div>
-</div>
-    <div class="row">
+
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-slideshow"></i></div>
-              <h4><class="title"><a href=""data-langkey="k69"></a></h4>
-              <p class="description" data-langkey="k70"></p>
-              <p class="description" data-langkey="k71"></p>
+              <h4><a href="">Dele cardo</a></h4>
+              <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-arch"></i></div>
-              <h4><class="title"><a href=""data-langkey="k72"></a></h4>
-              <p class="description" data-langkey="k73"></p>
-              <p class="description" data-langkey="k74"></p>
+              <h4><a href="">Divera don</a></h4>
+              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-slideshow"></i></div>
-              <h4><class="title"><a href=""data-langkey="k75"></a></h4>
-              <p class="description" data-langkey="k76"></p>
-              <p class="description" data-langkey="k77"></p>
+              <h4><a href="">Dele cardo</a></h4>
+              <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
             </div>
           </div>
-</div>
-<div class="row">
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
-        <div class="icon-box">
-          <div class="icon"><i class="bx bx-slideshow"></i></div>
-          <h4><class="title"><a href=""data-langkey="k69"></a></h4>
-          <p class="description" data-langkey="k70"></p>
-          <p class="description" data-langkey="k71"></p>
-        </div>
-      </div>
 
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-        <div class="icon-box">
-          <div class="icon"><i class="bx bx-arch"></i></div>
-          <h4><class="title"><a href=""data-langkey="k72"></a></h4>
-          <p class="description" data-langkey="k73"></p>
-          <p class="description" data-langkey="k74"></p>
-        </div>
-      </div>
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-arch"></i></div>
-              <h4><class="title"><a href=""data-langkey="k78"></a></h4>
-              <p class="description" data-langkey="k79"></p>
-              <p class="description" data-langkey="k80"></p>
+              <h4><a href="">Divera don</a></h4>
+              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
             </div>
-
           </div>
-</div>
-<div class="row">
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
-        <div class="icon-box">
-          <div class="icon"><i class="bx bx-slideshow"></i></div>
-          <h4><class="title"><a href=""data-langkey="k69"></a></h4>
-          <p class="description" data-langkey="k70"></p>
-          <p class="description" data-langkey="k71"></p>
-        </div>
-      </div>
 
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-        <div class="icon-box">
-          <div class="icon"><i class="bx bx-arch"></i></div>
-          <h4><class="title"><a href=""data-langkey="k72"></a></h4>
-          <p class="description" data-langkey="k73"></p>
-          <p class="description" data-langkey="k74"></p>
         </div>
-      </div>
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-arch"></i></div>
-              <h4><class="title"><a href=""data-langkey="k78"></a></h4>
-              <p class="description" data-langkey="k79"></p>
-              <p class="description" data-langkey="k80"></p>
-            </div>
-
-          </div>
-</div>
 
       </div>
     </section><!-- End Services Section -->
