@@ -444,7 +444,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 75vh;
-  background: url("../img/hero-bg.jpg") top left;
+  background: url("https://cdn.dribbble.com/users/1021976/screenshots/6720797/dribbble.gif") top left;
   background-size: cover;
   position: relative;
 }
